@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="31ddb41d-2c6e-42f1-87c0-fb047e1f3d24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/DatabaseRule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/EndangeredAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Sightings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Sightings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Wildlife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Wildlife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/AnimalTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
