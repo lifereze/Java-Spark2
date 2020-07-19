@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 
 public class AnimalTest {
 
-//    @Rule
-//    public DatabaseRule database = new DatabaseRule();
+     @Rule
+     public DatabaseRule database = new DatabaseRule();
 
     @Test
     public void animal_instantiateCorrectly_true(){

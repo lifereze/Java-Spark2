@@ -7,10 +7,10 @@ import org.sql2o.Sql2o;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class DatabaseRule {
+public class DB {
     private static URI dbUri;
     public static Sql2o sql2o;
-    static Logger logger = LoggerFactory.getLogger(DatabaseRule.class);
+    static Logger logger = LoggerFactory.getLogger(DB.class);
     static {
 
         try {

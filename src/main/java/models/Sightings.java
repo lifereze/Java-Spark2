@@ -36,7 +36,7 @@ public class Sightings {
     }
 
     public void save(){
-        try(Connection con = DatabaseRule.sql2o.open()){
+        try(Connection con = DB.sql2o.open()){
             String sql = "INSERT INTO sightings(location, ranger_name, wildlife_id, time) VALUES(:location,:ranger_name,:wildlife_id, now())";
             this.id =(int) con.createQuery(sql,true)
                     .addParameter("location",this.location)
@@ -49,7 +49,7 @@ public class Sightings {
 
     public static List<Sightings> all(){
         String querySightings = "SELECT * FROM sightings";
-        try (Connection con = DatabaseRule.sql2o.open()){
+        try (Connection con = DB.sql2o.open()){
             return con.createQuery(querySightings)
                     .executeAndFetch(Sightings.class);
         }
