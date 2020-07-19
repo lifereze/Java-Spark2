@@ -33,7 +33,7 @@ public abstract class Wildlife {
     }
 
     public void save(){
-        try (Connection con = DB.sql2o.open()){
+        try (Connection con = DatabaseRule.sql2o.open()){
             String sql = "INSERT INTO animals(name, type) VALUES(:name,:type)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name",this.name)

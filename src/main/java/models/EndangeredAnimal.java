@@ -33,7 +33,7 @@ public class EndangeredAnimal extends Wildlife {
     }
 
     public static List<EndangeredAnimal> all(){
-        try (Connection con = DB.sql2o.open()){
+        try (Connection con = DatabaseRule.sql2o.open()){
             String queryEndangered = "SELECT * FROM animals WHERE type='endangered animal'";
             return con.createQuery(queryEndangered)
                     .executeAndFetch(EndangeredAnimal.class);
@@ -42,7 +42,7 @@ public class EndangeredAnimal extends Wildlife {
 
     public void  saveAge(String age){
         String sql ="UPDATE animals SET age=:age WHERE id=:id";
-        try (Connection con = DB.sql2o.open()){
+        try (Connection con = DatabaseRule.sql2o.open()){
             con.createQuery(sql)
                     .addParameter("age", age)
                     .addParameter("id", this.id)
@@ -51,7 +51,7 @@ public class EndangeredAnimal extends Wildlife {
     }
     public void saveHealth(String health){
         String sql ="UPDATE animals SET health=:health WHERE id=:id";
-        try (Connection con = DB.sql2o.open()){
+        try (Connection con = DatabaseRule.sql2o.open()){
             con.createQuery(sql)
                     .addParameter("health", health)
                     .addParameter("id", this.id)
